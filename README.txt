@@ -6,7 +6,7 @@ ABSTRACT
 REQUIREMENTS
     *   PDL
 
-        Tested version 2.4.2.
+        Tested versions 2.4.2, 2.4.3, 2.4.7_001, 2.4.9, 2.4.9_015.
 
     *   SVDLIBC
 
@@ -40,7 +40,7 @@ AUTHOR
     Bryan Jurish <moocow@cpan.org>
 
 COPYRIGHT
-    Copyright (c) 2005, Bryan Jurish. All rights reserved.
+    Copyright (c) 2005-2011, Bryan Jurish. All rights reserved.
 
     This package is free software, and entirely without warranty. You may
     redistribute it and/or modify it under the same terms as Perl itself.

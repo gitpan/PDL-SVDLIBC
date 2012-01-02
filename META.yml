@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               PDL-SVDLIBC
-version:            0.05
+version:            0.06
 abstract:           PDL interface to Doug Rohde's SVD C Library
 author:
     - Bryan Jurish
