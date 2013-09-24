@@ -13,7 +13,7 @@ use DynaLoader;
 
 
 
-   $PDL::SVDLIBC::VERSION = 0.06;
+   $PDL::SVDLIBC::VERSION = 0.07;
    @ISA    = ( 'PDL::Exporter','DynaLoader' );
    push @PDL::Core::PP, __PACKAGE__;
    bootstrap PDL::SVDLIBC $VERSION;
@@ -175,10 +175,10 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 =for sig
 
-    int     ptr(nplus1);
-    int     rowids(nnz);
+    indx    ptr(nplus1);
+    indx    rowids(nnz);
     double  nzvals(nnz);
-    int     nrows();      ##-- default: max($rowids)+1
+    indx    nrows();      ##-- default: max($rowids)+1
     int     d();          ##-- default: nplus1-1
     int     iterations(); ##-- default: 2*$d
     double  end(2);       ##-- default: [-1e-30,1e-30]
@@ -257,10 +257,10 @@ sub svdlas2a {
 =for sig
 
   Signature: (
-    int     ptr(nplus1);
-    int     rowids(nnz);
+    int   ptr(nplus1);
+    int   rowids(nnz);
     double  nzvals(nnz);
-    int     nrows();
+    int   nrows();
     int     iterations();
     double  end(2);
     double  kappa();
@@ -393,7 +393,7 @@ Bryan Jurish E<lt>moocow@cpan.orgE<gt>
 
 =head2 Copyright Policy
 
-Copyright (C) 2005, Bryan Jurish. All rights reserved.
+Copyright (C) 2005-2013, Bryan Jurish. All rights reserved.
 
 This package is free software, and entirely without warranty.
 You may redistribute it and/or modify it under the same terms
